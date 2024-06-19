@@ -1,0 +1,8 @@
+
+services:
+  front_build:
+    image: data_sphere_studio_front_build:0.1
+    build:
+      dockerfile_inline:
+        FROM node:14.15.0
+        RUN npm -g install lerna --registry=https://registry.npmmirror.com
